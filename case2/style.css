@@ -1,0 +1,138 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f5f7;
+    color: #212529;
+    line-height: 1.5;
+}
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #273b63;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    font-size: 20px;
+}
+thead th {
+    background-color: #050505;
+    color: #ffffff;
+    text-align: left;
+    padding: 14px 18px;
+    border: 1px solid #495057;
+}
+
+th:nth-child(1) {
+    width: 16%;
+}
+th:nth-child(2) {
+    width: 25%;
+}
+th:nth-child(3) {
+    width: 36%;
+}
+th:nth-child(4) {
+    width: 23%;
+}
+tbody td {
+    padding: 12px 18px;
+    border: 1px solid #8b9299;
+}
+
+.break-row td {
+    text-align: center;
+    background-color: #dce4f1;
+    padding: 12px;
+    font-style: italic;
+}
+.source-card {
+    margin-top: 55px;
+    padding: 24px;
+    border: 1px solid #d3d6da;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+.source-card h3 {
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.source-card p {
+    font-size: 18px;
+    margin-bottom: 14px;
+    color: #343a40;
+}
+
+.source-button {
+    padding: 10px 18px;
+    background-color: #0d6efd;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.source-button:hover {
+    background-color: #0b5ed7;
+}
+@media (max-width: 768px) {
+    .container {
+        margin-top: 20px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    table {
+        min-width: 650px;
+        font-size: 16px;
+    }
+
+    thead th,
+    tbody td {
+        padding: 10px 12px;
+    }
+
+    .source-card {
+        margin-top: 30px;
+        padding: 18px;
+    }
+
+    .source-card p {
+        font-size: 15px;
+    }
+}

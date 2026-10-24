@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website informasi kampus, program studi, berita, dan kontak.">
+    <title>Website Kampus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <!-- Logo -->
+            <a href="#beranda" class="logo">
+                <span class="logo-icon">🎓</span>
+                <span>KampusKu</span>
+            </a>
+
+            <!-- Hamburger -->
+            <button class="hamburger"
+                    id="hamburger"
+                    aria-label="Buka menu navigasi"
+                    aria-expanded="false"
+                    aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigasi -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+                <li><a href="#program-studi" class="nav-link">Program Studi</a></li>
+                <li><a href="#berita" class="nav-link">Berita</a></li>
+                <li><a href="#kontak" class="nav-link">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="beranda" class="content">
+            <h1>Selamat Datang di KampusKu</h1>
+            <p>Temukan informasi pendidikan, program studi,
+               berita, dan kegiatan kampus kami.</p>
+        </section>
+
+        <section id="program-studi" class="content">
+            <h2>Program Studi</h2>
+            <p>Kenali berbagai program studi unggulan kami.</p>
+        </section>
+
+        <section id="berita" class="content">
+            <h2>Berita Terbaru</h2>
+            <p>Dapatkan informasi dan berita terbaru dari kampus.</p>
+        </section>
+
+        <section id="kontak" class="content">
+            <h2>Kontak Kami</h2>
+            <p>Hubungi kami untuk informasi lebih lanjut.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

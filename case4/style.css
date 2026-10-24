@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 35px auto;
+    padding: 0 15px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #243c63;
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    color: #111827;
+}
+
+h2 {
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #111827;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    max-width: 780px;
+}
+.gallery-item {
+    min-width: 0;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-item p {
+    margin-top: 7px;
+    font-size: 16px;
+    color: #343a40;
+}
+
+.source-card {
+    max-width: 800px;
+    margin-top: 48px;
+    padding: 20px 22px;
+    border: 1px solid #ced4da;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.source-card h3 {
+    font-size: 19px;
+    margin-bottom: 12px;
+    color: #212529;
+}
+
+.source-card p {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #343a40;
+}
+
+.source-button {
+    padding: 10px 16px;
+    background-color: #0d6efd;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.source-button:hover {
+    background-color: #0b5ed7;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 25px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .gallery-item img {
+        height: 150px;
+    }
+
+    .source-card {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+        height: 200px;
+    }
+
+    .source-card {
+        padding: 16px;
+    }
+}
